@@ -96,7 +96,7 @@ export default function page() {
                             </CardHeader>
                             <CardContent className="w-full flex flex-col items-center justify-center gap-4">
                                 <Image src={"/img/car 2.png"} alt="" width={220} height={68} />
-                                <Image src={"/img/Specification.png"} alt="" width={256} height={24} />
+                                <Image src={"/img/Specification2.png"} alt="" width={256} height={24} />
                             </CardContent>
                             <CardFooter className="w-full flex items-center justify-between">
                                 <p>
@@ -116,7 +116,7 @@ export default function page() {
                             </CardHeader>
                             <CardContent className="w-full flex flex-col items-center justify-center gap-4">
                                 <Image src={"/img/car3.png"} alt="" width={220} height={68} />
-                                <Image src={"/img/Specification.png"} alt="" width={256} height={24} />
+                                <Image src={"/img/Specification2.png"} alt="" width={256} height={24} />
                             </CardContent>
                             <CardFooter className="w-full flex items-center justify-between">
                                 <p>
@@ -147,7 +147,7 @@ export default function page() {
                             </CardHeader>
                             <CardContent className="w-full flex flex-col items-center justify-center gap-4">
                                 <Image src={"/img/car4.png"} alt="" width={220} height={68} />
-                                <Image src={"/img/Specification.png"} alt="" width={256} height={24} />
+                                <Image src={"/img/Specification2.png"} alt="" width={256} height={24} />
                             </CardContent>
                             <CardFooter className="w-full flex items-center justify-between">
                                 <p>
@@ -167,7 +167,7 @@ export default function page() {
                             </CardHeader>
                             <CardContent className="w-full flex flex-col items-center justify-center gap-4">
                                 <Image src={"/img/car5.png"} alt="" width={220} height={68} />
-                                <Image src={"/img/Specification.png"} alt="" width={256} height={24} />
+                                <Image src={"/img/Specification2.png"} alt="" width={256} height={24} />
                             </CardContent>
                             <CardFooter className="w-full flex items-center justify-between">
                                 <p>
@@ -187,7 +187,7 @@ export default function page() {
                             </CardHeader>
                             <CardContent className="w-full flex flex-col items-center justify-center gap-4">
                                 <Image src={"/img/car6.png"} alt="" width={220} height={68} />
-                                <Image src={"/img/Specification.png"} alt="" width={256} height={24} />
+                                <Image src={"/img/Specification2.png"} alt="" width={256} height={24} />
                             </CardContent>
                             <CardFooter className="w-full flex items-center justify-between">
                                 <p>

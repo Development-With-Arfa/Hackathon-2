@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import HeroCards from '../components/HeroCards';
 
 export default function Page() {
   const [showMore, setShowMore] = useState(false);
@@ -21,14 +22,14 @@ export default function Page() {
   return (
     <div className='w-full flex h-auto'>
       <div className="first hidden sm:flex w-[20%]">
-        <Image src={'/img/Nav Bar 1.png'} alt='' width={360} height={1600} />
+        <Image src={'/img/Nav Bar 1.png'} alt='' width={360} height={500} />
       </div>
       <div className="sec w-full sm:w-[80%] bg-[#f6f7f9] p-4 sm:p-6  flex flex-col gap-10 font-[family-name:var(--font-geist-sans)]">
-        <section className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-between ">
-
+        <section className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-between py-4">
+          <HeroCards/>
         </section>
         <section className="popular w-full flex flex-col gap-4">
-          <div className="sec grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               { title: 'Koenigsegg', image: '/img/car1.png', desc: 'Sport' },
               { title: 'Nissan GT - R', image: '/img/car 2.png', desc: 'Luxury' },
@@ -68,6 +69,10 @@ export default function Page() {
                 { title: 'NEW MG ZS', image: '/img/car10.png', desc: 'Sedan' },
                 { title: 'New MG ZX Excite', image: '/img/car11.png', desc: 'Sport' },
                 { title: 'NEW MG ZS', image: '/img/car12.png', desc: 'Sedan' },
+                { title: 'NEW MG ZS', image: '/img/car1.png', desc: 'Sedan' },
+                { title: 'NEW MG ZS', image: '/img/car 2.png', desc: 'Sports' },
+                { title: 'NEW MG ZS', image: '/img/car3.png', desc: 'sudan' },
+                { title: 'NEW MG ZS', image: '/img/car4.png', desc: 'Luxury' },
               ].map((car, index) => (
                 <Card key={index} className="w-full max-w-[304px] mx-auto h-auto flex flex-col justify-between">
                   <CardHeader>

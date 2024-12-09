@@ -1,38 +1,44 @@
-import React from "react";
-import Image from "next/image";
+import Image from 'next/image'
+import React from 'react'
 
-export default function Page() {
+const page = () => {
   return (
-    <div className="w-full flex flex-col md:flex-row">
-      <div className="first hidden md:flex w-[25%] lg:w-[50%]">
-        <Image src={"/img/Nav-admin.png"} alt="Nav Bar" width={360} height={1600} />
-      </div>
-      <div className="sec hidden md:flex w-full md:w-[75%] lg:w-[80%] bg-[#f6f7f9] p-4 sm:p-6 gap-3 flex-nowrap justify-center">
+    <section className='flex'>
+      <div>
         <Image
-          src={"/img/Details Rental.png"}
-          alt="Details Rental"
-          width={534}
+          src="/img/Nav-admin.png"
+          alt="side-bar"
+          height={900}
+          width={286}
+        />
+      </div>
+      
+      <div className='flex justify-center items-center w-full h-auto'>
+      <div>
+        <Image
+          src="/img/Details Rental.png"
+          alt=""
           height={836}
-          className="ml-1 w-full md:w-[45%] lg:w-[534px]"
-        />
-
-      </div>
-      <div className=" bg-[#f6f7f9] sm:p-6 flex flex-col gap-6 w-[25%] lg:w-[50%]">
-        <Image
-          src={"/img/Top5.png"}
-          alt="Top 5"
-          width={327}
-          height={508}
-          className="w-full"
-        />
-        <Image
-          src={"/img/transaction.png"}
-          alt="Recent Transaction"
-          width={400}
-          height={400}
-          className="w-full"
+          width={534}
         />
       </div>
-    </div>
-  );
+      <div className='h-auto'>
+        <Image
+          src="/img/Top 5 Car Rental.png"
+          alt=""
+          height={324}
+          width={524}
+        />
+        <Image
+          src="/img/transaction.png"
+          alt=""
+          height={480}
+          width={524}
+        />
+      </div>
+      </div>
+    </section>
+  )
 }
+
+export default page
