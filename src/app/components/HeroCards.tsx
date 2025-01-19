@@ -34,7 +34,7 @@ const HeroCards = () => {
               <h3 className='text-[16px] font-bold my-1'>Date</h3>
               <div className='flex items-center'>
                 <p className='hidden lg:block text-[#90A3BF] text-[12px]'>Select your date</p>
-                <p className='w-[80px] block lg:hidden text-[#90A3BF] text-[12px]'>20 Dec'2024</p>
+                <p className='w-[80px] block lg:hidden text-[#90A3BF] text-[12px]'>20 Dec 2024</p>
                 <MdKeyboardArrowDown />
               </div>
             </div>
@@ -90,7 +90,7 @@ const HeroCards = () => {
               <h3 className='text-[16px] font-bold my-1'>Date</h3>
               <div className='flex items-center'>
                 <p className='hidden lg:block text-[#90A3BF] text-[12px]'>Select your date</p>
-                <p className='w-[80px] block lg:hidden text-[#90A3BF] text-[12px]'>21 Dec'2024</p>
+                <p className='w-[80px] block lg:hidden text-[#90A3BF] text-[12px]'>21 Dec 2024</p>
                 <MdKeyboardArrowDown />
               </div>
             </div>
