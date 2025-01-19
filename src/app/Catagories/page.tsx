@@ -11,22 +11,22 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import HeroCards from '../components/HeroCards';
+import Specification from '../components/Specification';
 
 export default function Page() {
   const [showMore, setShowMore] = useState(false);
 
   const toggleShowMore = () => {
     setShowMore(!showMore);
-  };
-
+  }
   return (
     <div className='w-full flex h-auto'>
       <div className="first hidden sm:flex w-[20%]">
         <Image src={'/img/Nav Bar 1.png'} alt='' width={360} height={500} />
       </div>
-      <div className="sec w-full sm:w-[80%] bg-[#f6f7f9] p-4 sm:p-6  flex flex-col gap-10 font-[family-name:var(--font-geist-sans)]">
-        <section className="w-full flex flex-col sm:flex-row items-center justify-center sm:justify-between py-4">
-          <HeroCards/>
+      <div className="w-full sm:w-[80%] bg-[#f6f7f9] sm:p-6 p-4 flex flex-col gap-10 font-[family-name:var(--font-geist-sans)]">
+        <section className="w-auto flex flex-col sm:flex-row items-center justify-center sm:justify-between">
+          <HeroCards />
         </section>
         <section className="popular w-full flex flex-col gap-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -48,9 +48,9 @@ export default function Page() {
                   <CardDescription>{car.desc}</CardDescription>
                 </CardHeader>
                 <CardContent className="w-full flex md:flex-col items-center justify-center gap-4">
-                  <Image src={car.image} alt="" width={220} height={68} />
-                  <Image src={"/img/Specification2.png"} alt="" width={256} height={24} className='hidden md:flex' />
-                  <Image src={"/img/Specification2.png"} alt="" width={256} height={24} className='md:hidden' />
+                  <Image src={car.image} alt="" width={224} height={70} className='h-[64px] w-[142px] lg:h-[70px] lg:w-[224px] '/>
+                  <Specification />
+                  
                 </CardContent>
                 <CardFooter className="w-full flex items-center justify-between">
                   <p>
@@ -82,9 +82,8 @@ export default function Page() {
                     <CardDescription>{car.desc}</CardDescription>
                   </CardHeader>
                   <CardContent className="w-full flex md:flex-col items-center justify-center gap-4">
-                    <Image src={car.image} alt="" width={220} height={68} />
-                    <Image src={"/img/Specification2.png"} alt="" width={256} height={24} className='hidden md:flex' />
-                    <Image src={"/img/Specification 2.png"} alt="" width={256} height={24} className='md:hidden' />
+                    <Image src={car.image} alt="" width={224} height={70} className='h-[64px] w-[142px] lg:h-[70px] lg:w-[224px] '/>
+                    <Specification />
                   </CardContent>
                   <CardFooter className="w-full flex items-center justify-between">
                     <p>

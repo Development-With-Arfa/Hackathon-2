@@ -4,17 +4,17 @@ import React from 'react'
 
 const HeroSection = () => {
   return (
-    <section className='h-auto w-full flex  justify-center items-center lg:px-10 py-10 text-[#FFFFFF]'>
+    <section className='h-auto w-auto lg:w-[1440px] flex gap-7 justify-center items-center lg:px-10 pt-10 mb-10 text-[#FFFFFF] bg-white'>
 
-      <div className='h-auto w-full lg:w-1/2 flex justify-center'>
+      <div className=' lg:w-[640px] lg:h-[360px] mx-10'>
         <div
           style={{ backgroundImage: "url('/img/hero-bg-2.png')" }}
-          className='h-[360px] w-[640px] rounded-lg'
+          className='h-[232px] w-[327px] lg:w-[640px] lg:h-[360px] rounded-xl'
         >
-          <div className="lg:w-1/2 px-5">
-            <h3 className="text-[32px] font-semibold">The Best Platform for Car Rental</h3>
-            <p className='lg:py-5 py-2'>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
-            <button className='h-[44px] w-[120px] bg-[#3563E9] rounded-sm my-3 lg:my-6 inline '>Rental Car</button>
+          <div className="w-[284px] lg:h-[224px] px-5">
+            <h3 className="h-[20px] w-[240px] py-3 my-5 lg:py-8 lg:my-3 text-[16px] lg:w-[272px] lg:text-[32px] font-semibold">The Best Platform for Car Rental</h3>
+            <p className='w-[210px] h-[38px] lg:w-[284px] lg:h-[48px] text-[12px] lg:text-[16px] font-medium lg:py-16 py-4 flex flex-wrap'>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+            <button className='h-[44px] w-[128px] text-[12px] lg:text-[16px] semi-bold lg:h-[44px] lg:w-[120px] bg-[#3563E9] rounded-sm my-5 lg:my-6 inline '>Rental Car</button>
           </div>
 
           <Image
@@ -22,19 +22,19 @@ const HeroSection = () => {
             alt="car-img"
             height={200}
             width={200}
-            className='h-[116px] w-[406px] mx-auto relative bottom-8 lg:bottom-16 left-7 my-5 lg:my-0'
+            className='h-[56px] w-[196px] lg:h-[116px] lg:w-[406px] mx-auto lg:ml-44'
           />
         </div>
       </div>
 
-      <div className='hidden lg:flex h-auto w-full lg:w-1/2  justify-center'>
+      <div className='hidden lg:block lg:w-[640px] lg:h-[360px]'>
         <div
           style={{ backgroundImage: "url('/img/hero-bg-1.png')" }}
-          className='h-[360px] w-[640px] rounded-lg'
+          className='h-[360px] w-[640px] rounded-xl'
         >
-          <div className="w-1/2 px-5">
-            <h3 className="text-[32px] font-semibold">The Best Platform for Car Rental</h3>
-            <p className='py-5'>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
+          <div className="w-[284px] h-[224px] px-5">
+            <h3 className="my-3 py-2 pt-8 w-[272px] text-[32px] font-semibold">The Best Platform for Car Rental</h3>
+            <p className='w-[284px] h-[48px] text-[16px] font-medium'>Ease of doing a car rental safely and reliably. Of course at a low price.</p>
             <button className='h-[44px] w-[120px] bg-[#3563E9] rounded-sm my-6 inline '>Rental Car</button>
           </div>
 
@@ -43,7 +43,7 @@ const HeroSection = () => {
             alt="car-img"
             height={200}
             width={200}
-            className='h-[108px] w-[340px] mx-auto relative bottom-16 left-7'
+            className='h-[116px] w-[406px] ml-44 my-5 lg:my-0'
           />
         </div>
       </div>

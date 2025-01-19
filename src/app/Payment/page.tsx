@@ -13,9 +13,9 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="payment w-full bg-[#f6f7f9] p-4 sm:p-6  flex justify-center font-[family-name:var(--font-geist-sans)]">
-      <div className="cards w-full md:w-[70%] grid grid-cols-1 gap-6 order-2 lg:order-1">
-        <Card className="w-full lg:w-[852px] h-auto lg:h-[336px] flex flex-col justify-around">
+    <div className="payment w-full bg-[#f6f7f9] p-4 sm:p-6  flex flex-col lg:flex-row justify-center font-[family-name:var(--font-geist-sans)]">
+      <div className="mx-auto cards w-full md:w-[70%] grid grid-cols-1 gap-6 order-2 lg:order-1">
+        <Card className="bg-white w-full lg:w-[852px] h-auto lg:h-[336px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Billing Info</CardTitle>
             <CardDescription className="w-full flex items-center justify-between">
@@ -48,7 +48,7 @@ export default function Page() {
         </Card>
 
 
-        <Card className="w-full lg:w-[852px] h-auto lg:h-[664px] flex flex-col justify-around">
+        <Card className="bg-white w-full lg:w-[852px] h-auto lg:h-[664px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Rental Info</CardTitle>
             <CardDescription className="w-full flex items-center justify-between">
@@ -111,7 +111,7 @@ export default function Page() {
         </Card>
 
 
-        <Card className="w-full lg:w-[852px] h-auto lg:h-[596px] flex flex-col justify-around">
+        <Card className="bg-white w-full lg:w-[852px] h-auto lg:h-[596px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Payment Method</CardTitle>
             <CardDescription className="w-full flex items-center justify-between">
@@ -127,7 +127,7 @@ export default function Page() {
         </Card>
 
 
-        <Card className="w-full lg:w-[852px] h-auto lg:h-[484px] flex flex-col justify-around">
+        <Card className="bg-white w-full lg:w-[852px] h-auto lg:h-[484px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Confirmation</CardTitle>
             <CardDescription className="w-full flex items-center justify-between">
@@ -147,7 +147,7 @@ export default function Page() {
         </Card>
       </div>
       <div className="details w-full flex-shrink-0 lg:w-[40%] order-1 lg:order-2 flex justify-center">
-        <Image src={"/img/Rental Summary.png"} alt="Rental Summary" width={492} height={568} className=" lg:w-[492px] h-[568px]" />
+        <Image src={"/img/Rental Summary.png"} alt="Rental Summary" width={492} height={568} className=" lg:w-[492px] h-[568px] mb-6" />
       </div>
     </div>
   );
